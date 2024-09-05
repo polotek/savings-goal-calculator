@@ -1,0 +1,31 @@
+{
+  "name": "savings-goal-calculator",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild index.ts --bundle --minify --sourcemap --outfile=dist/index.js",
+    "dev": "esbuild index.ts --bundle --sourcemap --outfile=dist/index.js --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polotek/savings-goal-calculator.git"
+  },
+  "author": "Marco Rogers (polotek)",
+  "license": " AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/polotek/savings-goal-calculator/issues"
+  },
+  "homepage": "https://github.com/polotek/savings-goal-calculator#readme",
+  "dependencies": {
+    "amortize": "^1.1.0",
+    "chart.js": "^4.4.4",
+    "compound-calc": "^4.0.3"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.7",
+    "esbuild": "0.23.1",
+    "typescript": "^5.5.4"
+  }
+}

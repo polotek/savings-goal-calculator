@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "esbuild index.ts --bundle --minify --sourcemap --outfile=dist/index.js",
+    "build": "esbuild index.ts --bundle --minify --sourcemap --outfile=dist/index.js && cp index.html dist/index.html",
     "dev": "esbuild index.ts --bundle --sourcemap --outfile=dist/index.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,6 +24,7 @@
     "compound-calc": "^4.0.3"
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.5.8",
     "@tsconfig/recommended": "^1.0.7",
     "esbuild": "0.23.1",
     "typescript": "^5.5.4"

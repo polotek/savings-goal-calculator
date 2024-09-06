@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Savings Goal Calculator</h1>
+
+    <div class="slider-container">
+        <label for="goalAmount" class="slider-label">Goal Amount: $<span id="goalAmountValue">1000</span></label>
+        <input type="range" id="goalAmount" min="100" max="10000" value="1000" step="100">
+    </div>
+
+    <div class="slider-container">
+        <label for="initialAmount" class="slider-label">Initial Amount: $<span
+                id="initialAmountValue">1000</span></label>
+        <input type="range" id="initialAmount" min="100" max="10000" value="1000" step="100">
+    </div>
+
+    <div class="slider-container">
+        <label for="contributionAmount" class="slider-label">Contribution Amount: $<span
+                id="contributionAmountValue">1000</span></label>
+        <input type="range" id="contributionAmount" min="100" max="10000" value="1000" step="100">
+    </div>
+
+    <div class="slider-container">
+        <label for="timeToSave" class="slider-label">Time to Save (years): <span id="timeToSaveValue">12</span></label>
+        <input type="range" id="timeToSave" min="1" max="60" value="12" step="1">
+    </div>
+
+    <div class="slider-container">
+        <label for="interestRate" class="slider-label">Interest Rate (%): <span id="interestRateValue">5</span></label>
+        <input type="range" id="interestRate" min="0" max="20" value="5" step="0.1">
+    </div>
+
+    <canvas id="savingsChart" width="400" height="200"></canvas>
+
+    <script src="dist/index.js"></script>
+</body>
+
+</html>
